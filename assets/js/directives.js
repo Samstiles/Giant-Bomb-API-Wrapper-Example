@@ -1,14 +1,13 @@
-productivityTime.directive("taskwrapper", function(){
+productivityTime.directive("thing", function(){
   return {
     restrict: "EAC",
     scope: {
-      task: '=taskdata'
+      thing: '=thing'
     },
     replace: true,
-    templateUrl: "/templates/directives/taskwrapper.html",
+    templateUrl: "/templates/directives/thing.html",
     link: function(scope, element, attrs){
-      console.log('Heres the task data that made it into the directive!');
-      console.log(JSON.stringify(scope.task, null, 4));
+
     }
   };
 });
