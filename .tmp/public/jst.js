@@ -10,11 +10,11 @@ __p += '<h1>404 page!</h1>';
 return __p
 };
 
-this["JST"]["assets/templates/directives/taskwrapper.html"] = function(obj) {
+this["JST"]["assets/templates/directives/thing.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<div class="project-wrapper">\n  <div class="project-title"><p>{{ task.description }}</p></div>\n  <div class="next-action">{{ task.completedActions[0].description }}</div>\n  <div class="end-goal">{{ task.goal }}</div>\n</div>';
+__p += '';
 
 }
 return __p
