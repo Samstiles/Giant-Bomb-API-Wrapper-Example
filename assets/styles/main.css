@@ -116,29 +116,18 @@ a:after {
 
 i {
 	margin: 8px;
-	color: #3498db; 
+	color: #3498db;
 }
 
+body {
+  background: url(../images/bg.svg) no-repeat center top;
+}
 
 /* HeaderWrap */
 #headerwrap {
-	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background: url(../img/bg.svg) no-repeat center top;
 	padding-top: 95px;
-	background-attachment: relative;
-	background-position: center center;
 	min-height: 100%;
 	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 #headerwrap h1 {
