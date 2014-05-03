@@ -20,12 +20,12 @@
 
 module.exports.connections = {
   postgresql_database: {
-    adapter : 'sails-postgresql',
-    host    : process.env.PG_HOST,
-    user    : process.env.PG_USER,
-    password: process.env.PG_PASSWORD,
-    database: process.env.PG_DATABASE,
-    port: process.env.PG_PORT
+    adapter : 'sails-mysql',
+    host    : 'localhost',
+    user    : 'root',
+    password: '',
+    database: 'gbthing',
+    port: '3306'
   }
 };
 

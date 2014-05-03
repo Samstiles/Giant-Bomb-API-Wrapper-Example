@@ -29,13 +29,3 @@ __p += '<div class="container page-wrapper authentication-page">\n  <div class="
 }
 return __p
 };
-
-this["JST"]["assets/templates/tasks.html"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __e = _.escape;
-with (obj) {
-__p += '<div class="container page-wrapper">\n  <div class="col-xs-12">\n    <div ng-repeat="task in tasks" taskwrapper taskdata="task"></div>\n  </div>\n</div>';
-
-}
-return __p
-};

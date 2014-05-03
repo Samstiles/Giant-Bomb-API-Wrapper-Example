@@ -20,11 +20,6 @@ module.exports = {
     password: {
       type: 'string',
       required: true
-    },
-
-    tasks: {
-      collection: 'task',
-      via: 'user'
     }
 
   },
