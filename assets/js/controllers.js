@@ -1,6 +1,25 @@
 app.controller('indexController', function($scope, $rootScope, $http){
 
+  $http.defaults.useXDomain = true;
 
+  $scope.initialQuery = '';
+
+  $scope.runQuery = function(){
+    console.log('Sending query...');
+    $http.jsonp('http://www.giantbomb.com/api/search/', {
+      params: {
+        api_key: '97aa330b6c4a3276eb9ea1de316d031713a8040e',
+        format: 'jsonp',
+        json_callback: 'JSON_CALLBACK',
+        resource: 'game',
+        query: $scope.initialQuery
+      }
+    }).success(function(data, status, headers, config) {
+      console.log('Success!');
+    }).error(function(data, status, headers, config) {
+      console.log('Error!');
+    });
+  };
 
 });
 

@@ -4,3 +4,7 @@ var app = angular
     'ngAnimate',
     'ui.bootstrap'
 ]);
+
+app.run(function($http) {
+  $http.defaults.useXDomain = true;
+});
