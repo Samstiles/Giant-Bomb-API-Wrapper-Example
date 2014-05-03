@@ -24,7 +24,7 @@ this["JST"]["assets/templates/findagame.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<h1>Stuff!</h1>';
+__p += '<div id="headerwrap">\r\n\t<div class="container">\r\n\t\t<div class="row">\r\n\t\t\t<div class="col-lg-6 pull-right">\r\n\t\t\t\t<h1>What was the last game you played, that you enjoyed?</h1>\r\n\t\t\t\t<form class="form-inline" role="form">\r\n\t\t\t\t  <div class="form-group col-xs-12">\r\n\t\t\t\t    <input type="text" class="form-control col-xs-10" id="gameinput" placeholder="Start typing the game title"> \r\n\t\t\t\t  \t<button type="submit" style="margin-left: 15px" class="btn btn-danger col-xs-2">Search!</button>\r\n\t\t\t\t  </div>\r\n\t\t\t\t</form>\t\t\t\t\t\r\n\t\t\t</div><!-- /col-lg-6 -->\t\t\t\t\r\n\t\t</div><!-- /row -->\r\n\t</div><!-- /container -->\r\n</div><!-- /headerwrap -->';
 
 }
 return __p
