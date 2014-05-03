@@ -24,7 +24,7 @@ this["JST"]["assets/templates/findagame.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<div id="headerwrap">\r\n\t<div class="container">\r\n\t\t<div class="row">\r\n\t\t\t<div class="col-lg-6 pull-right">\r\n\t\t\t\t<h1>What was the last game you played, that you enjoyed?</h1>\r\n\t\t\t\t<form class="form-inline" role="form">\r\n\t\t\t\t  <div class="form-group col-xs-12">\r\n\t\t\t\t    <input type="text" class="form-control col-xs-10" id="gameinput" placeholder="Start typing the game title"> \r\n\t\t\t\t  \t<button type="submit" style="margin-left: 15px" class="btn btn-danger col-xs-2">Search!</button>\r\n\t\t\t\t  </div>\r\n\t\t\t\t</form>\t\t\t\t\t\r\n\t\t\t</div><!-- /col-lg-6 -->\t\t\t\t\r\n\t\t</div><!-- /row -->\r\n\t</div><!-- /container -->\r\n</div><!-- /headerwrap -->';
+__p += '<div id="headerwrap">\r\n\t<div class="container">\r\n\t\t<div class="row" id="content">\r\n\t\t\t<div class="col-lg-6 pull-left">\r\n\t\t\t\t<h1>What was the last game you played, that you enjoyed?</h1>\r\n\t\t\t\t<form class="form-inline" role="form">\r\n\t\t\t\t  <div class="form-group col-xs-12 no-padding-left">\r\n\t\t\t\t    <input type="text" class="input-lg col-xs-6" id="gameinput" placeholder="Start typing the game title"> \r\n\t\t\t\t  \t<a type="submit" style="margin-left: 15px" class="search-btn btn-lg col-xs-2">Search!</a>\r\n\t\t\t\t  </div>\r\n\t\t\t\t</form>\t\t\t\t\t\r\n\t\t\t</div><!-- /col-lg-6 -->\t\t\t\t\r\n\t\t</div><!-- /row -->\r\n\t</div><!-- /container -->\r\n</div><!-- /headerwrap -->\r\n\r\n<script type="text/javascript">\r\n$("div").each(function(index) {\r\n    $(this).delay(400*index).fadeIn(300);\r\n});\r\n</script>';
 
 }
 return __p
