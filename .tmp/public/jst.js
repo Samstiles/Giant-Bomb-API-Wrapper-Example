@@ -20,6 +20,16 @@ __p += '';
 return __p
 };
 
+this["JST"]["assets/templates/findagame.html"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += '<h1>Stuff!</h1>';
+
+}
+return __p
+};
+
 this["JST"]["assets/templates/login.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;

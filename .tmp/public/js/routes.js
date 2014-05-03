@@ -3,24 +3,24 @@ app.config(function($routeProvider, $locationProvider) {
   $routeProvider
 
   .when('/', {
-    templateUrl: '/templates/tasks.html',
-    controller: 'tasksController'
+    templateUrl: '/templates/findagame.html',
+    controller: 'indexController'
   })
 
-  .when("/tasks", {
-    templateUrl: '/templates/tasks.html',
-    controller: 'tasksController',
-    resolve: {
-      "tasks": function($http, $rootScope, $location){
-        return $http.get("http://localhost:1337/findTasksByUser")
-        .then(function(successResponse){
-          return successResponse.data;
-        }, function(errorResponse){
-          return $location.path('/404');
-        });
-      }
-    }
-  })
+  // .when("/tasks", {
+  //   templateUrl: '/templates/tasks.html',
+  //   controller: 'tasksController',
+  //   resolve: {
+  //     "tasks": function($http, $rootScope, $location){
+  //       return $http.get("http://localhost:1337/findTasksByUser")
+  //       .then(function(successResponse){
+  //         return successResponse.data;
+  //       }, function(errorResponse){
+  //         return $location.path('/404');
+  //       });
+  //     }
+  //   }
+  // })
 
   .when("/login", {
     templateUrl: '/templates/login.html',

@@ -1,9 +1,6 @@
-app.controller('tasksController', function($scope, $rootScope, $http, tasks){
+app.controller('indexController', function($scope, $rootScope, $http){
 
-  $scope.tasks = tasks;
 
-  console.log('Heres the tasks data we got back from the server:');
-  console.log(JSON.stringify(tasks, null, 4));
 
 });
 
@@ -56,7 +53,7 @@ app.controller('authLoginController', function($scope, $rootScope, $http, $locat
       console.log('Success happened!');
       console.log(JSON.stringify(data, null, 4));
       $rootScope.currentUser = data;
-      $location.path('/tasks');
+      $location.path('/');
     })
     .error(function(data, status, headers, config){
       console.log('Error happened!');
@@ -77,7 +74,7 @@ app.controller('authLoginController', function($scope, $rootScope, $http, $locat
         console.log('Success happened!');
         console.log(JSON.stringify(data, null, 4));
         $rootScope.currentUser = data;
-        $location.path('/tasks');
+        $location.path('/');
       })
       .error(function(data, status, headers, config){
         console.log('Error happened!');
