@@ -21,9 +21,9 @@
 module.exports.connections = {
   postgresql_database: {
     adapter : 'sails-mysql',
-    host    : 'localhost',
-    user    : 'root',
-    password: '',
+    host    : '72.10.50.94',
+    user    : 'gbthing',
+    password: 'gbthing',
     database: 'gbthing',
     port: '3306'
   }
