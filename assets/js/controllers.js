@@ -49,6 +49,12 @@ app.controller('authLogoutController', function($scope, $rootScope, $http, $loca
 
 });
 
+
+app.controller('randomGameController', function($scope, $rootScope, $http, $location){
+
+
+});
+
 app.controller('authLoginController', function($scope, $rootScope, $http, $location){
 
   $scope.email_signin = "";
