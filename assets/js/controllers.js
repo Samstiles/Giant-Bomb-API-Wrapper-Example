@@ -5,6 +5,11 @@ app.controller('indexController', function($scope, $rootScope, $http){
   $scope.initialQuery = '';
   $scope.results;
 
+
+  $(function(){
+    $('#content').fadeIn('slow');
+  });
+
   $scope.runQuery = function(){
     console.log('Sending query...');
     $http.jsonp('http://www.giantbomb.com/api/search/', {

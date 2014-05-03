@@ -1,10 +1,11 @@
 <div id="headerwrap">
 	<div class="container">
 		<div class="row" id="content">
-			<div class="col-lg-6 pull-right">
+			<div class="col-lg-6 pull-left">
 				<h1>What was the last game you played, that you enjoyed?</h1>
 				<form class="form-inline" role="form">
 				  <div class="form-group col-xs-12 no-padding-left">
+<<<<<<< HEAD
 				    <input type="text" class="input-lg col-xs-6" id="gameinput" ng-model="initialQuery" placeholder="Start typing the game title">
 				  	<button type="submit" style="margin-left: 15px" class="btn btn-danger btn-lg col-xs-2" ng-click="runQuery()">Search!</button>
             <div class="results" ng-show="results.length">
@@ -12,6 +13,10 @@
                 <li ng-repeat="game in results"><img src="{{ game.image.thumb_url }}">{{ game.name }}</li>
               </ul>
             </div>
+=======
+				    <input type="text" class="input-lg col-xs-6" id="gameinput" ng-model="initialQuery" placeholder="Start typing the game title"> 
+				  	<a type="submit" style="margin-left: 15px" ng-click="runQuery()" class="search-btn btn-lg col-xs-2">Search!</a>
+>>>>>>> 756c2b08e037a8d25b3476d984d4542d26aad7b8
 				  </div>
 				</form>
 			</div><!-- /col-lg-6 -->
