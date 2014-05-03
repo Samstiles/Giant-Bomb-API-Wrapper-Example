@@ -1,4 +1,4 @@
-productivityTime.directive("thing", function(){
+app.directive("thing", function(){
   return {
     restrict: "EAC",
     scope: {

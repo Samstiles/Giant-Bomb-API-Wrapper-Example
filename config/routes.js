@@ -10,9 +10,5 @@ module.exports.routes = {
   '/processLogout': {
     controller: 'UserController',
     action: 'processLogout'
-  },
-  '/findTasksByUser': {
-    controller: 'TaskController',
-    action: 'findTasksByUser'
   }
 };

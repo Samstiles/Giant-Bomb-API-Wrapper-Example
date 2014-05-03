@@ -1,18 +1,18 @@
-productivityTime.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider, $locationProvider) {
 
   $routeProvider
 
   .when('/', {
-    templateUrl: '/templates/index.html',
-    controller: 'indexController'
+    templateUrl: '/templates/tasks.html',
+    controller: 'tasksController'
   })
 
-  .when("/thing", {
-    templateUrl: '/templates/thing.html',
-    controller: 'thingController',
+  .when("/tasks", {
+    templateUrl: '/templates/tasks.html',
+    controller: 'tasksController',
     resolve: {
-      "thing": function($http, $rootScope, $location){
-        return $http.get("http://someURL/")
+      "tasks": function($http, $rootScope, $location){
+        return $http.get("http://localhost:1337/findTasksByUser")
         .then(function(successResponse){
           return successResponse.data;
         }, function(errorResponse){
