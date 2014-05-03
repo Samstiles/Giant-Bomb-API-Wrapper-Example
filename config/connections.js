@@ -19,79 +19,14 @@
  */
 
 module.exports.connections = {
-
-  // Local disk storage for DEVELOPMENT ONLY
-  //
-  // Installed by default.
-  //
-  localDiskDb: {
-    adapter: 'sails-disk'
-  },
-
-  local_mysql_database: {
-    adapter : 'sails-mysql',
-    host    : 'localhost',
-    user    : 'root',
-    password: '',
-    database: 'productivitytime'
-  },
-
-  live_postgresql_database: {
+  postgresql_database: {
     adapter : 'sails-postgresql',
-    host    : 'ec2-23-23-177-33.compute-1.amazonaws.com',
-    user    : 'ctdfzrmcwcczuq',
-    password: 'yAv9umxYAkwfXD5sRYrtzfOPoA',
-    database: 'dffvid88vruijp',
-    port: '5432'
-  },
-
-  // MySQL is the world's most popular relational database.
-  // http://en.wikipedia.org/wiki/MySQL
-  //
-  // Run:
-  // npm install sails-mysql
-  //
-  someMysqlServer: {
-    adapter : 'sails-mysql',
-    host    : 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
-    user    : 'YOUR_MYSQL_USER',
-    password: 'YOUR_MYSQL_PASSWORD',
-    database: 'YOUR_MYSQL_DB'
-  },
-
-  // MongoDB is the leading NoSQL database.
-  // http://en.wikipedia.org/wiki/MongoDB
-  //
-  // Run:
-  // npm install sails-mongo
-  //
-  someMongodbServer: {
-    adapter   : 'sails-mongo',
-    host      : 'localhost',
-    port      : 27017,
-    user      : 'username',
-    password  : 'password',
-    database  : 'your_mongo_db_name_here'
-  },
-
-  // PostgreSQL is another officially supported relational database.
-  // http://en.wikipedia.org/wiki/PostgreSQL
-  //
-  // Run:
-  // npm install sails-postgresql
-  //
-  somePostgresqlServer: {
-    adapter   : 'sails-postgresql',
-    host      : 'YOUR_POSTGRES_SERVER_HOSTNAME_OR_IP_ADDRESS',
-    user      : 'YOUR_POSTGRES_USER',
-    password  : 'YOUR_POSTGRES_PASSWORD',
-    database  : 'YOUR_POSTGRES_DB'
+    host    : process.env.PG_HOST,
+    user    : process.env.PG_USER,
+    password: process.env.PG_PASSWORD,
+    database: process.env.PG_DATABASE,
+    port: process.env.PG_PORT
   }
-
-
-  // More adapters:
-  // https://github.com/balderdashy/sails
-
 };
 
 
