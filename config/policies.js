@@ -14,7 +14,7 @@
 
 module.exports.policies = {
 
-  '*': 'sessionAuth',
+  // '*': 'sessionAuth',
 
   UserController: {
     'processLogin': true,
