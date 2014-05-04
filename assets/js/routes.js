@@ -48,8 +48,13 @@ app.config(function($routeProvider, $locationProvider) {
     controller: 'authLogoutController'
   })
 
-  .when("/randomgame", {
-    templateUrl: '/templates/randomgame.html',
+  .when("/results", {
+    templateUrl: '/templates/results.html',
+    controller: 'gameResultsController'
+  })
+
+  .when("/random", {
+    templateUrl: '/templates/random.html',
     controller: 'randomGameController'
   })
 
