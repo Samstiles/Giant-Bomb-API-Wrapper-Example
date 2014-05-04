@@ -150,6 +150,60 @@ body {
   }
 }
 
+.black-backdrop {
+  height: 500px;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+
+  .page-wrapper {
+    background: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    .divider {
+      border-right-color: #E7B285;
+    }
+
+    h2, label {
+      color: white;
+    }
+
+    a.search-btn {
+      color: #fff;
+      border-radius: 4px;
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 0 18px;
+      border-top: 3px solid rgba(0,0,0,0);
+      border-bottom: 3px solid lighten(#d2322d, 10%);
+      color: #ffffff;
+      background: #d2322d;
+      padding-top: 7px;
+      padding-left: 20px;
+      height: 46px;
+
+      &:hover {
+        border-bottom: 3px solid lighten(#d2322d, 10%);
+        color: #ffffff;
+        background: #d2322d;
+      }
+
+      &:active {
+        border-bottom: 0;
+        transform: translateY(3px);
+        -o-transform: translateY(3px);
+        -ms-transform: translateY(3px);
+        -moz-transform: translateY(3px);
+        -webkit-transform: translateY(3px);
+      }
+    }
+  }
+}
+
 .authentication-page {
   max-width: 600px;
   position: relative;
