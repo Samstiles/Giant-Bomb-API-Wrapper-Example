@@ -3,7 +3,7 @@ app.controller('indexController', function($scope, $rootScope, $http){
   $http.defaults.useXDomain = true;
 
   $scope.initialQuery = '';
-  $scope.results;
+  $scope.results = [];
 
   $scope.runQuery = function(){
     console.log('Sending query...');
@@ -29,6 +29,16 @@ app.controller('indexController', function($scope, $rootScope, $http){
 
 });
 
+app.controller('gameController', function($scope, $rootScope, $http, $location, gameData){
+  console.log('Made it to the controller, here\'s the game data:');
+  console.log(gameData);
+
+  $scope.game = gameData.data.results;
+
+  console.log('And the data separated out of the response object:');
+  console.log($scope.game);
+});
+
 app.controller('authLogoutController', function($scope, $rootScope, $http, $location){
 
   $scope.processLogout = function(){
@@ -46,12 +56,6 @@ app.controller('authLogoutController', function($scope, $rootScope, $http, $loca
       $location.path('/login');
     });
   };
-
-});
-
-
-app.controller('randomGameController', function($scope, $rootScope, $http, $location){
-
 
 });
 

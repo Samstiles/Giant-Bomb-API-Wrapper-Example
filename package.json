@@ -36,5 +36,8 @@
     "url": "git://github.com/samuelstiles/test.git"
   },
   "author": "samuelstiles",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "async": "^0.8.0"
+  }
 }
