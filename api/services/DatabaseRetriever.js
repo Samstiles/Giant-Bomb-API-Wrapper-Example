@@ -4,7 +4,7 @@ var async = require('async');
 exports.start = function(){
 
   Count.count(function(err, num){
-    for ( num; num < 42330; num++ ) {
+    for ( num; num < 52337; num++ ) {
 
       var game = {
         name: '',
@@ -33,6 +33,7 @@ exports.start = function(){
           });
 
           res.on('end', function() {
+            console.log('BODY:\n' + body);
             var gbresponse = JSON.parse(body);
 
 
