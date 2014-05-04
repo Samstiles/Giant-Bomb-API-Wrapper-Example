@@ -7,20 +7,16 @@ app.config(function($routeProvider, $locationProvider) {
     controller: 'indexController'
   })
 
-  // .when("/tasks", {
-  //   templateUrl: '/templates/tasks.html',
-  //   controller: 'tasksController',
-  //   resolve: {
-  //     "tasks": function($http, $rootScope, $location){
-  //       return $http.get("http://localhost:1337/findTasksByUser")
-  //       .then(function(successResponse){
-  //         return successResponse.data;
-  //       }, function(errorResponse){
-  //         return $location.path('/404');
-  //       });
-  //     }
-  //   }
-  // })
+  .when("/gameList", {
+    templateUrl: '/templates/results.html',
+    controller: 'gamesListController',
+    resolve: {
+      "games": function($http, $route, $location, $rootScope){
+        console.log($route.current);
+        return [];
+      }
+    }
+  })
 
   .when("/game/:gameid", {
     templateUrl: '/templates/game.html',

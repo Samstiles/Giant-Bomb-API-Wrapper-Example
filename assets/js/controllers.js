@@ -59,6 +59,10 @@ app.controller('authLogoutController', function($scope, $rootScope, $http, $loca
 
 });
 
+app.controller('gamesListController', function($scope, $rootScope, $http, $location, games){
+  console.log(games);
+});
+
 app.controller('authLoginController', function($scope, $rootScope, $http, $location){
 
   $scope.email_signin = "";
